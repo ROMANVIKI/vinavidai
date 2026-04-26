@@ -1,0 +1,6 @@
+- name: Lint with Ruff
+        working-directory: backend
+        run: |
+          uv add ruff
+          uv run ruff check .
+          uv run ruff format --check .
