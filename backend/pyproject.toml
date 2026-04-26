@@ -1,0 +1,30 @@
+[project]
+name = "vinavidai-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "boto3>=1.42.96",
+    "celery>=5.6.3",
+    "django>=6.0.4",
+    "django-cors-headers>=4.9.0",
+    "django-environ>=0.13.0",
+    "django-filter>=25.2",
+    "django-redis>=6.0.0",
+    "django-storages>=1.14.6",
+    "djangorestframework>=3.17.1",
+    "djangorestframework-simplejwt>=5.5.1",
+    "gunicorn>=25.3.0",
+    "pillow>=12.2.0",
+    "psycopg2-binary>=2.9.12",
+    "redis>=7.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "factory-boy>=3.3.3",
+    "pytest>=9.0.3",
+    "pytest-django>=4.12.0",
+    "ruff>=0.15.12",
+]
